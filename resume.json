@@ -1,0 +1,50 @@
+{
+  "profile": {
+    "name": "Jane Doe",
+    "email": "jane@example.com",
+    "summary": "Experienced full-stack engineer with a focus on high-scale distributed systems."
+  },
+  "skills": [
+    {
+      "category": "Frontend",
+      "name": "React"
+    },
+    {
+      "category": "Backend",
+      "name": "TypeScript"
+    },
+    {
+      "category": "Backend",
+      "name": "Node.js"
+    },
+    {
+      "category": "Cloud",
+      "name": "Cloudflare Workers"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Tech Corp",
+      "role": "Senior Engineer",
+      "location": "Remote",
+      "start_date": "2021-01-01",
+      "end_date": "Present",
+      "description": "Led the backend team in developing a globally distributed serverless API."
+    }
+  ],
+  "education": [
+    {
+      "institution": "State University",
+      "degree": "B.S. in Computer Science",
+      "graduation_year": 2018
+    }
+  ],
+  "projects": [
+    {
+      "name": "MCP Resume Server",
+      "tech_stack": "TypeScript, Cloudflare Workers, SSE, D1 SQLite",
+      "description": "Built a secure, serverless MCP server on the edge allowing AI agents to dynamically query my resume.",
+      "link": "https://cvmcp.ohsan.cc"
+    }
+  ]
+}

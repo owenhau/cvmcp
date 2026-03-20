@@ -1,0 +1,27 @@
+{
+  "name": "cvmcp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-key": "npx ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/generate-key.ts",
+    "update-resume": "npx ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/update-resume.ts",
+    "deploy": "wrangler deploy",
+    "list-keys": "npx ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/list-keys.ts",
+    "remove-key": "npx ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/remove-key.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260313.1",
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "@types/node": "^25.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.73.0",
+    "zod": "^4.3.6"
+  }
+}

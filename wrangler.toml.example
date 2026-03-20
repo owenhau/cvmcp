@@ -1,0 +1,23 @@
+name = "cvmcp"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = [ "nodejs_compat" ]
+account_id = "YOUR_ACCOUNT_ID"
+workers_dev = true
+
+[[routes]]
+pattern = "your-custom-domain.com"
+custom_domain = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "resume-db"
+database_id = "YOUR_DATABASE_ID"
+
+[[durable_objects.bindings]]
+name = "SESSION_MANAGER"
+class_name = "SessionManager"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["SessionManager"]
