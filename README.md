@@ -133,6 +133,5 @@ curl -X POST https://cvmcp.example.com/mcp \
 
 ## 💡 Troubleshooting & Remarks
 
-- **Unified Endpoint:** The previous `/sse` and `/message` endpoints have been consolidated into `/mcp`.
 - **NDJSON Streaming:** When `stream: true` is sent, the server responds with newline-delimited JSON (NDJSON) chunks.
 - **Verification:** To confirm the server is working, run `/mcp list` **inside** a Gemini CLI session. If it shows as `Connected` (or `Ready`) and lists your tools, the AI agent is correctly connected and ready to assist you! 🐱✨
